@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (4.7.2)
+  - CHTCollectionViewWaterfallLayout (0.9.7):
+    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.7)
+  - CHTCollectionViewWaterfallLayout/ObjC (0.9.7)
+  - DACircularProgress (2.3.1)
+  - IDMPhotoBrowser (1.10.2):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - pop (1.0.12)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SnapKit (5.0.0)
+  - Spring (1.0.5)
+  - SwiftyGif (5.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CHTCollectionViewWaterfallLayout
+  - IDMPhotoBrowser
+  - SDWebImage
+  - SnapKit
+  - Spring
+  - SwiftyGif
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CHTCollectionViewWaterfallLayout
+    - DACircularProgress
+    - IDMPhotoBrowser
+    - pop
+    - SDWebImage
+    - SnapKit
+    - Spring
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  IDMPhotoBrowser: 4bb459b1faffc228e92bccdf7c54ad6d6b7e8c37
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
+  SwiftyGif: f7702483db93586a41f04f4927cd682852a2fa10
+
+PODFILE CHECKSUM: ce9bd2b51302e372d33b1b480e00a4f510b57a29
+
+COCOAPODS: 1.7.5

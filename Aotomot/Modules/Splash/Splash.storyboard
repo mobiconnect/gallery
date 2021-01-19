@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" title="Splash" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SplashViewController" customModule="Aotomot_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage-iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="5yL-HV-rOx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dx-Wt-8ym" userLabel="LogoView">
+                                <rect key="frame" x="101" y="245" width="173" height="38"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client-logo-big" translatesAutoresizingMaskIntoConstraints="NO" id="yO6-7k-G2B">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="38"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yO6-7k-G2B" firstAttribute="leading" secondItem="9dx-Wt-8ym" secondAttribute="leading" id="EbF-qj-fvq"/>
+                                    <constraint firstAttribute="trailing" secondItem="yO6-7k-G2B" secondAttribute="trailing" id="hRd-nN-FTe"/>
+                                    <constraint firstAttribute="bottom" secondItem="yO6-7k-G2B" secondAttribute="bottom" id="vtF-Pb-w0C"/>
+                                    <constraint firstItem="yO6-7k-G2B" firstAttribute="top" secondItem="9dx-Wt-8ym" secondAttribute="top" id="yWP-lM-Yrh"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="14f-0m-Krl">
+                                <rect key="frame" x="169" y="293" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="14f-0m-Krl" firstAttribute="top" secondItem="9dx-Wt-8ym" secondAttribute="bottom" constant="10" id="48m-AX-Wsk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5yL-HV-rOx" secondAttribute="trailing" id="7Ii-Lv-QC5"/>
+                            <constraint firstItem="5yL-HV-rOx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Us-cz-0xI"/>
+                            <constraint firstItem="9dx-Wt-8ym" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="Ccs-RQ-M8L"/>
+                            <constraint firstAttribute="bottom" secondItem="5yL-HV-rOx" secondAttribute="bottom" id="PbO-e4-r2a"/>
+                            <constraint firstItem="5yL-HV-rOx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vap-nb-aKj"/>
+                            <constraint firstItem="14f-0m-Krl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kOH-KL-OAL"/>
+                            <constraint firstItem="9dx-Wt-8ym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ywq-za-1u5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgLogo" destination="yO6-7k-G2B" id="Qyz-KV-HGV"/>
+                        <outlet property="topConstraintLogoView" destination="Ccs-RQ-M8L" id="CKC-iS-4He"/>
+                        <outlet property="viewLogo" destination="9dx-Wt-8ym" id="Zsc-Lq-jqr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="client-logo-big" width="173" height="38"/>
+        <image name="launchImage-iPhone" width="375" height="667"/>
+    </resources>
+</document>
